@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: aquamarine;
+    font-family: "Comic Relief", system-ui
+}
+
+.quote{
+    text-align: center;
+    padding: 35px;
+    left: 50%;
+    position: absolute;
+    width: 600px;
+    background: linear-gradient(rgb(251, 209, 209),rgb(194, 194, 249));
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.quote h2{
+    margin-bottom: 35px;
+    font-size: 35px;
+    position: relative;
+}
+.quote h2::after{
+    content: '';
+    width: 70px;
+    bottom: -10px;
+    left: 50%;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(7, 27, 49);
+    position: absolute;
+    transform: translate(-50%);
+}
+
+.quote section{
+    font-size: 25px;
+    height: 100px;
+}
+
+.quote span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(7, 27, 49);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+#btn{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+}
+#btn button{
+    background: rgb(122, 178, 239);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(122, 178, 239);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+}
+
+#btn button:hover {
+    background-color: rgba(51, 51, 51, 0.1); 
+    border-color: #555;
+}
+
+#btn i{
+    margin-right: 8px;
+}
+
+
+
